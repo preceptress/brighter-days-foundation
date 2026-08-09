@@ -95,11 +95,13 @@ h3 { margin: 0; color: var(--purple); font-size: 1.03rem; }
 
 .help { padding-top: 25px; }
 .help-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
-.help-card { position: relative; overflow: hidden; padding: 0 20px 20px; border: 1px solid var(--border); border-radius: 7px; background: #fff; text-align: center; box-shadow: 0 8px 24px rgba(62,34,70,.07); }
-.card-art { height: 150px; margin: 0 -20px 18px; overflow: hidden; background: #eadcf0; }
+.help-card { position: relative; overflow: hidden; padding: 0; border: 1px solid var(--border); border-radius: 12px; background: #fff; text-align: center; box-shadow: 0 12px 30px rgba(62,34,70,.11); transition: transform .2s ease, box-shadow .2s ease; }
+.help-card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(62,34,70,.16); }
+.card-art { height: 170px; margin: 0; overflow: hidden; background: #eadcf0; }
 .card-art img { width: 100%; height: 100%; display: block; object-fit: cover; }
-.help-icon { position: absolute; top: 125px; left: 18px; width: 48px; height: 48px; display: grid; place-items: center; border: 4px solid #fff; border-radius: 50%; font-size: 1.35rem; }
-.help-card p { min-height: 44px; margin: 8px 0; color: var(--muted); font-size: .82rem; }.help-card a { color: var(--purple); text-decoration: none; font-size: .8rem; font-weight: 800; }
+.help-icon { position: absolute; z-index: 2; top: 143px; left: 18px; width: 54px; height: 54px; display: grid; place-items: center; border: 4px solid #fff; border-radius: 50%; font-size: 1.45rem; box-shadow: 0 5px 14px rgba(67,32,84,.15); }
+.help-card-body { min-height: 190px; padding: 30px 22px 22px; background: #fff; }
+.help-card h3 { font-size: 1.2rem; }.help-card p { min-height: 52px; margin: 10px 0 14px; color: #4b4450; font-size: .92rem; line-height: 1.5; }.help-card a { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border-radius: 6px; color: var(--purple-dark); background: var(--purple-soft); text-decoration: none; font-size: .9rem; font-weight: 800; }
 
 .testimonial { padding: 25px 0; }
 .testimonial-inner { position: relative; min-height: 190px; overflow: hidden; padding: 42px 45% 35px 95px; border-radius: 45% 5% 45% 4% / 18% 10% 20% 14%; color: #fff; background: linear-gradient(90deg, rgba(82,27,119,.96), rgba(99,40,137,.7)), url("assets/testimonial-placeholder.jpg") center / cover no-repeat; }
@@ -134,7 +136,7 @@ h3 { margin: 0; color: var(--purple); font-size: 1.03rem; }
   .program-grid, .help-grid, .impact-grid, .story-grid, .resource-wrap, .donate-card, .newsletter-wrap, .footer-grid { grid-template-columns: 1fr; }
   .program-grid { gap: 0; }.program-item { padding: 25px 10px; }.program-item + .program-item { border-left: 0; border-top: 1px solid var(--border); }.impact-grid > div { padding: 10px; }.impact-grid > div + div { border-left: 0; border-top: 1px solid #d6cbd9; }
   .story { padding-top: 20px; }.story-grid { gap: 55px; }.story-visual { min-height: 290px; }.paint-quote { left: -8px; width: min(300px, 90%); }.story-copy { text-align: center; }
-  .help-grid { gap: 20px; }.help-card p { min-height: 0; }.testimonial-inner { min-height: 230px; padding: 42px 35px 45px 70px; }.quote-mark { left: 28px; }.testimonial-inner::after, .sun-heart { display: none; }
+  .help-grid { gap: 20px; }.help-card-body { min-height: 0; }.help-card p { min-height: 0; }.testimonial-inner { min-height: 230px; padding: 42px 35px 45px 70px; }.quote-mark { left: 28px; }.testimonial-inner::after, .sun-heart { display: none; }
   .resource-wrap, .donate-card { gap: 28px; padding: 26px 20px; }.amount-grid { grid-template-columns: 1fr 1fr; }.newsletter-wrap { gap: 18px; }.newsletter-form { grid-column: auto; flex-direction: column; }.footer-grid { gap: 28px; }.footer-contact { grid-column: auto; }
 }
 
