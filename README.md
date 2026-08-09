@@ -2,6 +2,8 @@
 
 A polished, handoff-ready static website for a pediatric cancer community nonprofit.
 
+https://preceptress.github.io/brighter-days-foundation/
+
 ## What is included
 
 - Responsive homepage
