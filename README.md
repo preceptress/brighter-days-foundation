@@ -116,3 +116,11 @@ Because this nonprofit serves children, avoid publishing a child's diagnosis, tr
 - `README.md` — handoff instructions
 
 No npm. No framework. No build process. It is intentionally boring underneath and beautiful on top.
+
+## Support This Project
+
+This software is free and open for everyone.
+
+Organizations that require professional deployment, hosting, training, or custom development are welcome to contact us. Revenue from these services helps us continue developing free software for nonprofits, educators, researchers, and communities worldwide.
+
+📧 **info@preceptress.design**
