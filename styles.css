@@ -59,11 +59,8 @@ h3 { margin: 0; color: var(--purple); font-size: 1.03rem; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: var(--purple); color: #fff; box-shadow: 0 8px 20px rgba(113,55,147,.22); }
 .button-secondary { background: #fff; color: var(--purple); border: 1.5px solid var(--purple); }
-.hero-art { position: relative; align-self: stretch; min-height: 510px; overflow: hidden; background: radial-gradient(circle at 63% 28%, #f5eafa 0 10%, transparent 30%), linear-gradient(145deg, #d9bce5, #9060ac); }
-.hero-art::before { content: ""; position: absolute; width: 340px; height: 340px; left: 50%; top: 65px; transform: translateX(-50%); border-radius: 50%; background: #f0ddea; box-shadow: 0 20px 50px rgba(72,31,91,.18); }
-.placeholder-person { position: absolute; z-index: 2; left: 50%; bottom: 8px; width: 290px; height: 390px; transform: translateX(-50%); }
-.person-head { position: absolute; left: 65px; top: 0; width: 160px; height: 160px; display: grid; place-items: center; border-radius: 50%; background: #f1c5aa; border: 26px solid #75518d; color: var(--gold); font-size: 2rem; }
-.person-body { position: absolute; inset: 130px 0 0; display: grid; place-items: center; border-radius: 45% 45% 12px 12px; background: #e5d8cd; color: #ba719c; font-size: 7rem; text-shadow: 0 8px 0 rgba(255,255,255,.4); }
+.hero-art { position: relative; align-self: stretch; min-height: 510px; overflow: hidden; background: linear-gradient(145deg, #d9bce5, #9060ac); }
+.hero-art > img { width: 100%; height: 100%; min-height: 510px; display: block; object-fit: cover; object-position: 64% center; }
 .photo-label { position: absolute; z-index: 4; right: 22px; bottom: 38px; padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,.86); color: var(--purple-dark); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .hero-orbit { position: absolute; border: 2px solid rgba(255,255,255,.36); border-radius: 50%; }
 .orbit-one { width: 460px; height: 460px; right: -100px; top: -120px; }
@@ -90,7 +87,7 @@ h3 { margin: 0; color: var(--purple); font-size: 1.03rem; }
 .story { padding-top: 5px; }
 .story-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 75px; align-items: center; }
 .story-visual { position: relative; min-height: 320px; overflow: visible; border-radius: 8px; background: linear-gradient(135deg, #eedff3, #c7dbea); box-shadow: var(--shadow); }
-.placeholder-scene { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; color: rgba(113,55,147,.28); }.scene-rainbow { position: absolute; left: 20px; top: 10px; font: 15rem/1 "Patrick Hand"; transform: rotate(25deg); }.scene-heart { position: absolute; right: 24%; bottom: 20%; color: #9c69b8; font-size: 5rem; }.scene-star { position: absolute; right: 10%; top: 14%; color: var(--gold); font-size: 3rem; }
+.story-visual > img { width: 100%; height: 320px; display: block; object-fit: cover; border-radius: inherit; }
 .story-visual .photo-label { bottom: 20px; right: 20px; }
 .paint-quote { position: absolute; z-index: 3; left: -35px; bottom: -23px; width: 320px; padding: 18px 34px; color: #fff; background: linear-gradient(90deg, #8b4ba9, #713793); clip-path: polygon(3% 7%, 97% 0, 100% 85%, 2% 100%, 0 45%); font: 1.45rem/1.18 "Patrick Hand", cursive; transform: rotate(-2deg); }
 .paint-quote span { color: var(--gold); }
@@ -99,15 +96,14 @@ h3 { margin: 0; color: var(--purple); font-size: 1.03rem; }
 .help { padding-top: 25px; }
 .help-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
 .help-card { position: relative; overflow: hidden; padding: 0 20px 20px; border: 1px solid var(--border); border-radius: 7px; background: #fff; text-align: center; box-shadow: 0 8px 24px rgba(62,34,70,.07); }
-.card-art { height: 150px; margin: 0 -20px 18px; display: grid; place-items: center; font-size: 4.4rem; background: linear-gradient(145deg, #eadcf0, #c89cd5); color: rgba(255,255,255,.8); }
-.art-volunteer { background: linear-gradient(145deg, #cce3d6, #88b7a2); }.art-event { background: linear-gradient(145deg, #eed5c2, #d8a784); }.art-share { background: linear-gradient(145deg, #eccfcf, #a8729d); }
+.card-art { height: 150px; margin: 0 -20px 18px; overflow: hidden; background: #eadcf0; }
+.card-art img { width: 100%; height: 100%; display: block; object-fit: cover; }
 .help-icon { position: absolute; top: 125px; left: 18px; width: 48px; height: 48px; display: grid; place-items: center; border: 4px solid #fff; border-radius: 50%; font-size: 1.35rem; }
 .help-card p { min-height: 44px; margin: 8px 0; color: var(--muted); font-size: .82rem; }.help-card a { color: var(--purple); text-decoration: none; font-size: .8rem; font-weight: 800; }
 
 .testimonial { padding: 25px 0; }
-.testimonial-inner { position: relative; min-height: 190px; overflow: hidden; padding: 42px 45% 35px 95px; border-radius: 45% 5% 45% 4% / 18% 10% 20% 14%; color: #fff; background: linear-gradient(90deg, rgba(106,45,142,.96), rgba(107,43,144,.82)), linear-gradient(145deg, #db98b7, #ffc679); }
-.testimonial-inner::after { content: ""; position: absolute; right: 4%; top: -65%; width: 390px; height: 300px; border-radius: 50%; background: radial-gradient(circle, #ffd86d 0 11%, #f7ab73 12% 22%, transparent 23%); opacity: .8; }
-.quote-mark { position: absolute; left: 50px; top: 22px; font: 5rem/1 Georgia, serif; }.testimonial blockquote { margin: 0; font: 1.65rem/1.2 "Patrick Hand", cursive; }.testimonial p { margin: 12px 0 0; font-size: .8rem; font-weight: 700; }.sun-heart { position: absolute; z-index: 2; right: 19%; top: 55px; font-size: 6rem; }
+.testimonial-inner { position: relative; min-height: 190px; overflow: hidden; padding: 42px 45% 35px 95px; border-radius: 45% 5% 45% 4% / 18% 10% 20% 14%; color: #fff; background: linear-gradient(90deg, rgba(82,27,119,.96), rgba(99,40,137,.7)), url("assets/testimonial-placeholder.jpg") center / cover no-repeat; }
+.quote-mark { position: absolute; left: 50px; top: 22px; font: 5rem/1 Georgia, serif; }.testimonial blockquote { margin: 0; font: 1.65rem/1.2 "Patrick Hand", cursive; }.testimonial p { margin: 12px 0 0; font-size: .8rem; font-weight: 700; }.sun-heart { display: none; }
 
 .resources { padding-bottom: 35px; }
 .resource-wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: 65px; align-items: center; padding: 35px; border-radius: 14px; background: #faf7fc; }
