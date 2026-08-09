@@ -1,126 +1,156 @@
-# Brighter Days Foundation — nonprofit website starter
+# Brighter Days Foundation — Open Source Nonprofit Website Starter
 
-A polished, handoff-ready static website for a pediatric cancer community nonprofit.
+A modern, production-ready website template for nonprofits, charities, foundations, advocacy groups, and other mission-driven organizations.
+
+Originally created for a pediatric cancer foundation, this project has been generalized into a flexible starter that can be customized for virtually any nonprofit mission.
+
+**🌐 Live Demo**
 
 https://preceptress.github.io/brighter-days-foundation/
 
-## What is included
+---
+
+## Our Mission
+
+Every nonprofit deserves a professional web presence, regardless of budget.
+
+The Brighter Days Foundation template is released as open-source software to help organizations launch beautiful, accessible websites quickly—allowing them to spend more time serving their communities and less time building technology.
+
+Whether your mission is healthcare, education, environmental protection, poverty reduction, animal welfare, or community development, this template provides a strong foundation to build upon.
+
+---
+
+# Who Is This Template For?
+
+This project can be adapted for virtually any nonprofit, including:
+
+- ❤️ Healthcare organizations
+- 🎗️ Cancer foundations
+- 🎓 Education initiatives
+- 🌍 Environmental organizations
+- 🍎 Food banks
+- 🏠 Housing & homelessness programs
+- 👨‍👩‍👧 Community organizations
+- 🐾 Animal rescue groups
+- 🌎 International aid organizations
+- 🤝 Faith-based charities
+- 💙 Any mission-driven nonprofit
+
+---
+
+# What Is Included
 
 - Responsive homepage
-- Founder/story section
-- Programs/mission section
-- Community section
-- Resource links
-- Donation call-to-action
-- Newsletter section
-- Mobile navigation
-- Subtle scroll animation
-- Accessible HTML structure
-- No framework, database, or build step required
+- Mission & Vision section
+- About the organization
+- Leadership & Board members
+- Volunteer opportunities
+- Donation section
+- News & Events
+- Contact page
+- Mobile-friendly responsive design
+- Easy customization
+- Clean HTML/CSS/JavaScript
+- Ready for GitHub Pages hosting
 
-## Launch in 5 minutes
+---
 
-1. Unzip the folder.
-2. Double-click `index.html` to preview it locally.
-3. Replace the placeholder nonprofit name, email, story, and resource links.
-4. Replace photo placeholder blocks with real `<img>` tags.
-5. Upload the folder to Netlify, GitHub Pages, Cloudflare Pages, or any normal web host.
-6. Point the nonprofit's custom domain to the host.
+# Why Open Source?
 
-## Replace the name
+Many nonprofits operate with limited budgets and limited access to technical resources.
 
-Search all files for:
+Our goal is to provide a professional website foundation that organizations can freely download, customize, and deploy without licensing costs.
 
-`Brighter Days Foundation`
+We hope this project enables more organizations to focus their resources where they matter most—making a positive impact in their communities.
 
-and replace it with the nonprofit's real name.
+---
 
-## Replace the email
+# Getting Started
 
-Search for:
+Clone the repository:
 
-`hello@example.org`
-
-and replace it with the nonprofit's email address.
-
-## Add the logo
-
-Inside the `.brand` link in `index.html`, replace:
-
-```html
-<span class="brand-mark" aria-hidden="true">✦</span>
+```bash
+git clone https://github.com/preceptress/brighter-days-foundation.git
 ```
 
-with something like:
+Open the project folder:
 
-```html
-<img src="images/logo.svg" alt="Nonprofit name" class="logo">
+```bash
+cd brighter-days-foundation
 ```
 
-Then add the image to an `images/` folder.
+Launch locally by opening:
 
-## Add real photos
-
-The site intentionally uses visible photo placeholders so nobody accidentally launches it with stock imagery.
-
-Replace a block like:
-
-```html
-<div class="photo-placeholder">
-  <span>ADD HERO PHOTO</span>
-</div>
+```
+index.html
 ```
 
-with:
+or serve the project using your preferred local web server.
 
-```html
-<img src="images/founder.jpg" alt="Founder smiling outdoors">
-```
+---
 
-For the large hero image, put the `<img>` inside the existing `.photo-card.main-photo` wrapper.
+# Customization
 
-## Donation button
+The template has been designed so that you can easily replace:
 
-The current Donate Securely button uses `href="#"`.
-
-Replace it with a real donation page from Givebutter, Donorbox, PayPal, Stripe, or the nonprofit's preferred processor.
-
-## Newsletter
-
-The newsletter form is visual only right now. Connect it to Mailchimp, Buttondown, ConvertKit, or another email provider before launch.
-
-## Recommended content before launch
-
-- Exact nonprofit name
-- Founder-approved story text
+- Organization name
+- Logo
+- Colors
+- Images
 - Mission statement
-- Programs offered today
-- City/state served
-- Contact email
-- Donation provider
-- 501(c)(3) status and EIN if appropriate to publish
-- Privacy policy
-- Photo permissions, especially for minors
-- Accurate medical/resource disclaimers
+- Team members
+- Donation links
+- Contact information
 - Social media links
 
-## Important child-safety/privacy note
+No frameworks or build tools are required.
 
-Because this nonprofit serves children, avoid publishing a child's diagnosis, treatment history, location, school, hospital, or photographs unless the organization has clear consent to do so. Do not collect sensitive medical information through a basic website form.
+---
 
-## Files
+# Contributing
 
-- `index.html` — page structure and text
-- `styles.css` — all visual design
-- `script.js` — menu, donation selection, scroll animations
-- `README.md` — handoff instructions
+Contributions are always welcome.
 
-No npm. No framework. No build process. It is intentionally boring underneath and beautiful on top.
+Whether you'd like to improve accessibility, enhance the design, fix bugs, or add new nonprofit-focused features, pull requests and suggestions are appreciated.
 
-## Support This Project
+---
 
-This software is free and open for everyone.
+# Professional Services
 
-Organizations that require professional deployment, hosting, training, or custom development are welcome to contact us. Revenue from these services helps us continue developing free software for nonprofits, educators, researchers, and communities worldwide.
+This project is provided free of charge.
 
-📧 **info@preceptress.design**
+Organizations that need assistance deploying, customizing, hosting, or extending this template are welcome to contact us.
+
+Professional services help support the continued development of free open-source software for nonprofits.
+
+Services include:
+
+- ☁️ Website Hosting
+- 🚀 Deployment
+- 🎨 Custom Design
+- 💻 Custom Development
+- 🤖 AI Integration
+- 🔒 Maintenance & Support
+
+📧 **Contact:** [info@preceptress.design](mailto:info@preceptress.design)
+
+---
+
+# License
+
+This project is released under the MIT License.
+
+See the LICENSE file for details.
+
+---
+
+## ❤️ Together We Can Build Brighter Days
+
+If this project helps your organization, consider:
+
+- ⭐ Starring this repository
+- 🍴 Forking the project
+- 💡 Contributing improvements
+- 📢 Sharing it with other nonprofits
+
+Together we can help mission-driven organizations around the world build a stronger online presence.
